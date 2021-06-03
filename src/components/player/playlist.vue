@@ -41,8 +41,8 @@
                 :class='getCurrentIcon(song)'
               ></i>
               <span class="text">{{song.name}}</span>
-              <span class="favorite" @click.stop="toggleFavorite">
-                <i :class='getFavoriteIcon(song)'></i>
+              <span class="favorite" @click.stop="toggleFavorite(song)">
+                <i :class="getFavoriteIcon(song)"></i>
               </span>
               <span
                 class='delete'

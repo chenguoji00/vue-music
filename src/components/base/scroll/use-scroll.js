@@ -9,6 +9,7 @@ export default function useScroll (wrapperRef, options, emit) {
   // 初始化scroll
   onMounted(() => {
     const scrollVal = scroll.value = new BScroll(wrapperRef.value, {
+      disableTouch: false,
       observeDOM: true,
       ...options
     })
