@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const ERR_OK = 0
 // 生产环境时改为线上地址
-const baseURL = process.env.NODE_ENV === 'production' ? 'http://congxin0616.top/vue-music' : '/'
+const baseURL = process.env.NODE_ENV === 'production' ? 'http://congxin0616.top/music' : '/'
 
 axios.defaults.baseURL = baseURL
 
